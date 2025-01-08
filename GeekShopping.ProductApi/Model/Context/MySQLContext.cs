@@ -17,7 +17,7 @@ namespace GeekShopping.ProductApi.Model.Context
                 Name = "Name 2",
                 Price = new decimal(70.8),
                 CategoryName = "Category 2",
-                ImageURL = "https://www.heidisql.com/download.php",
+                ImageURL = "https://www.heidisql.com/download.php/",
                 Description = "Description 2",
 
             });
