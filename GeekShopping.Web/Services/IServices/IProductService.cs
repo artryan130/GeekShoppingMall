@@ -8,7 +8,7 @@ namespace GeekShopping.Web.Services.IServices
 
         Task<ProductModel> FindProductById(long id);
 
-        Task<ProductModel> CreateProduct (ProductModel product);
+        Task<ProductModel> CreateProduct(ProductModel product);
 
         Task<ProductModel> UpdateProduct(ProductModel product);
 
