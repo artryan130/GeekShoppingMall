@@ -1,4 +1,4 @@
-﻿using GeekShopping.ProductApi.Data.ValeuObjects;
+﻿using GeekShopping.ProductApi.Data.ValueObjects;
 using GeekShopping.ProductApi.Repository;
 using Microsoft.AspNetCore.Mvc;
 
