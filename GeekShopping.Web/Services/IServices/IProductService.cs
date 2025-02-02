@@ -4,13 +4,13 @@ namespace GeekShopping.Web.Services.IServices
 {
     public interface IProductService
     {
-        Task<IEnumerable<ProductModel>> FindAllProducts();
+        Task<IEnumerable<ProductViewModel>> FindAllProducts();
 
-        Task<ProductModel> FindProductById(long id);
+        Task<ProductViewModel> FindProductById(long id);
 
-        Task<ProductModel> CreateProduct(ProductModel product);
+        Task<ProductViewModel> CreateProduct(ProductViewModel product);
 
-        Task<ProductModel> UpdateProduct(ProductModel product);
+        Task<ProductViewModel> UpdateProduct(ProductViewModel product);
 
         Task<bool> DeleteProductById(long id);
     }

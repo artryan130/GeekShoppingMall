@@ -25,7 +25,7 @@ namespace GeekShopping.Web.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> ProductCreate(ProductModel productModel)
+        public async Task<IActionResult> ProductCreate(ProductViewModel productModel)
         {
             if(ModelState.IsValid)
             {
@@ -48,7 +48,7 @@ namespace GeekShopping.Web.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> ProductUpdate(ProductModel productModel)
+        public async Task<IActionResult> ProductUpdate(ProductViewModel productModel)
         {
             if (ModelState.IsValid)
             {
@@ -69,7 +69,7 @@ namespace GeekShopping.Web.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> ProductDelete(ProductModel model)
+        public async Task<IActionResult> ProductDelete(ProductViewModel model)
         {
             var response = await _productService.DeleteProductById(model.Id);
             if (response) return RedirectToAction(nameof(ProductIndex));
